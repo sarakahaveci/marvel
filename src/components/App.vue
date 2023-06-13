@@ -6,7 +6,7 @@
         <div class="favorites" @click="showFavorites = !showFavorites">
           <span class="badge heart-badge">
             Added to Favorite
-            <span class="count">{{ favoriteCount }}</span>
+            <span class="count"> {{ favoriteCount }}</span>
           </span>
         </div>
       </div>
@@ -34,9 +34,10 @@
               <strong>Creators:</strong> {{ comic.creators }}
             </p>
             <button class="favorite-button" @click="toggleFavorite(comic)">
-              <span class="heart-icon">{{
+              <span class="heart-icon"> 
+                {{
                 isFavorite(comic) ? "❤️" : "🤍"
-              }} </span>
+              }} <h4>Add To Favorite</h4> </span>
             </button>
           </div>
         </div>
@@ -153,6 +154,21 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+h4 {
+  display: inline-block;
+  /* justify-content: center;
+  align-items: center;
+  text-align: center; */
+  color: #ddd;
+  margin-left: 12px;
+  background: red;
+  border: 1px solid;
+  padding: 10px;
+} 
+h4:hover {
+  background: #ddd;
+  color: red;
+}
 
 header {
   margin-bottom: 20px;
@@ -202,6 +218,7 @@ h1 {
 }
 
 .heart-icon {
+  margin-left: 12px;
   margin-right: 5px;
 }
 
