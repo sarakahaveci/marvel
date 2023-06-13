@@ -2,7 +2,7 @@
   <div class="app">
     <header>
       <div class="navbar">
-        <img src="./assets/logo.png" alt="Marvel Comics Logo" />
+        <img src="../assets/logo.png" alt="Marvel Comics Logo" />
         <div class="favorites" @click="showFavorites = !showFavorites">
           <span class="badge heart-badge">
             Added to Favorite
